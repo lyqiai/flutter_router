@@ -1,0 +1,15 @@
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+builders:
+  router_combining:
+    import: "package:router_generator/generator.dart"
+    builder_factories: ["routerCombiningBuilder"]
+    build_extensions: {".dart": [".router_table.dart"]}
+    required_inputs: [".router"]
+    build_to: source
+  router:
+    import: "package:router_generator/generator.dart"
+    builder_factories: ["routerBuilder"]
+    build_extensions: { ".dart": [".router"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["router_generator|router_combining"]
