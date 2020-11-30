@@ -16,7 +16,10 @@ dependencies:
   code_builder: ^3.2.0
   build: ^1.2.2
   router:
-    path: ../annotation
+    git:
+      url: https://github.com/lyqiai/flutter_router
+      ref: master
+      path: annotation
 
 dev_dependencies:
   flutter_test:
