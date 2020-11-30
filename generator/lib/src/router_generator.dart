@@ -97,7 +97,7 @@ class RouterGenerator extends Generator {
         if (field == null) {
           sb.write('null, ');
         } else {
-          sb.write("args['$paramterName']");
+          sb.write("args['$paramterName'], ");
         }
       }
 
@@ -107,7 +107,7 @@ class RouterGenerator extends Generator {
         if (field == null) {
           sb.write('$paramterName: null, ');
         } else {
-          sb.write("$paramterName: args['$paramterName']");
+          sb.write("$paramterName: args['$paramterName'], ");
         }
       }
     }
