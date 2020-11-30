@@ -1,8 +1,8 @@
 name: router_generator
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+author: river
+homepage: https://github.com/lyqiai/flutter_router/tree/master
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
